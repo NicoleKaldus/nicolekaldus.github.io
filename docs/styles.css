@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+embed {
+    width: 100%;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Card styling */
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 30px;
+    margin: auto;
+    width: 55%;
+  }
+  
+  /* Image styling */
+.card-photo {
+    width: 20%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+  
+  /* Content styling */
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+  
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+}
+  
+.card-desc {
+    font-size: 1em;
+    color: #555;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /* Center the items horizontally */
+}
+
+.description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color:#333;
+    background-color: #9a9a9a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #767676;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+.profile-photo {
+    width: 20%;
+    max-width: 400px;
+    min-width: 100px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.resume-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Embedded PDF styling */
+.resume-pdf {
+    display: block;
+    width: 80%;
+    height: 80vh; /*Adjust the height as needed*/
+    margin: 20px auto; /* Center the PDF in the container */
+    border: none;
+    flex-grow: 1; /* Make the PDF take the remaining space */
+}
+
+.social-links {
+    display: flex; /* Align social links horizontally */
+    gap: 30px; /* Space between each social link */
+    justify-content:start;
+    margin-top: 20px; /* Space above the social links */
+}
+
+.social-link {
+    display: inline-block; /* Allow link to be styled as a block */
+    color: #555; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2em; /* Font size for text links or icons */
+    transition: color 0.3s, transform 0.3s; /* Smooth transitions for color and scaling */
+}
+
+/* Hover effect for social links */
+.social-link:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+.text-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Align text content vertically */
+    justify-content: space-between; /* Center the text content vertically within its container */
+    height: 100%;
+    max-width: 50%;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+/* General Navigation Styles */
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#menu ul li {
+    position: relative;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    
+    display: block;
+    font-weight: 500;
+}
+
+#resume-container, #resume-view {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
