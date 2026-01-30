@@ -1,2 +1,2 @@
 # nicolekaldus.github.io
-If you are seeing this, it means I messed up...sorry about that
+this should not show up on the site i dont think
